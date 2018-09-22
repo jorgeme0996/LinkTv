@@ -1,0 +1,24 @@
+body{
+    padding-top: 100px;
+}
+
+nav{
+    background-color: #532473;
+}
+
+.blanco{
+    color: white;
+    font-size: 20px;
+    padding: 0 50px;
+}
+
+a:hover {
+    color: black;
+    transition: color 0.5s linear;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.title{
+    font-size: 35px;
+}
