@@ -9,7 +9,7 @@ var express         = require("express"),
 
 //seedBD();
 // mongoose.connect("mongodb://localhost/linkTv", {useNewUrlParser: true});
-mongoose.connect("mongodb://jorge:jorge007@ds111963.mlab.com:11963/linktv")
+mongoose.connect("mongodb://jorge:jorge007@ds111963.mlab.com:11963/linktv");
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
