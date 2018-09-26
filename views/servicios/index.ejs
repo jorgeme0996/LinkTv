@@ -1,0 +1,111 @@
+<% include ../partials/header %>
+<link rel="stylesheet" href="/stylesheets/servIndex.css">
+
+<div class="container">
+
+    <h1>Servicios</h1>
+
+    <section class="search">
+        <form action="" class="ui form">
+            <div class="two fields">
+                <h3>Search <i class="fas fa-search"></i></h3>
+                <div class="field">
+                    <label>Categoria</label>
+                    <select name="categoria">
+                        <option value="Asesoria legal">Asesoría legal</option>
+                        <option value="Mercadotecnia">Mercadotecnia</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Subcategoria</label>
+                    <select name="subcategoria">
+                        <option value="Mercantil">Mercantil</option>
+                        <option value="Civil">Penal</option>
+                        <option value="Penal">Civil</option>
+                    </select>
+                </div>
+            </div>  
+        </form>
+    </section>
+
+    <section class="serv-interactivo">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <h3>Asesoría legal</h3>
+                    <section class="subcategorias">
+                        <ul>
+                            <li><h4><a class="a-sub" href="#">Mercantil</a></h4></li>
+                            <li><h4><a class="a-sub" href="#">Penal</a></h4></li>
+                            <li><h4><a class="a-sub" href="#">Civil</a></h4></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <h3 id="merca">Mercadotecnia</h3>
+                    <section class="subcategorias">
+                        <ul>
+                            <li><h4><a class="a-sub merca" href="#">Marketing digital</a></h4></li>
+                            <li><h4><a class="a-sub merca" href="#">Diseño gráfico</a></h4></li>
+                            <li><h4><a class="a-sub merca" href="#">Diseño web</a></h4></li>
+                            <li><h4><a class="a-sub merca" href="#">Estudió de mercado</a></h4></li>
+                            <li><h4><a class="a-sub merca" href="#">Activaciones</a></h4></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <h3 id="merca">Gestoria empresarial</h3>
+                    <section class="subcategorias">
+                        <ul>
+                            <li><h4><a class="a-sub merca" href="#">Modelo de negocios</a></h4></li>
+                            <li><h4><a class="a-sub merca" href="#">Implementación</a></h4></li>
+                            <li><h4><a class="a-sub merca" href="#">Administración</a></h4></li>
+                            <li><h4><a class="a-sub merca" href="#">Sistemas de medición</a></h4></li>
+                            <li><h4><a class="a-sub merca" href="#">Control de calidad</a></h4></li>
+                            <li><h4><a class="a-sub merca" href="#">Clima laboral</a></h4></li>   
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <a class="sin-sub" href=""><div class="jumbotron"><h3>Renta de equipo de producción audiovisual</h3></div></a> 
+            </div>
+            <div class="col-md-4">
+                <a class="sin-sub" href=""><div class="jumbotron"><h3>Diseño industrial</h3></div></a> 
+            </div>
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <h3>Asesoría en finanzas</h3>
+                    <section class="subcategorias">
+                        <ul>
+                            <li><h4><a class="a-sub" href="#">Finanzas personales</a></h4></li>
+                            <li><h4><a class="a-sub" href="#">Finanzas empresariales</a></h4></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <a class="sin-sub" href=""><div class="jumbotron"><h3>Asesoría fiscal/contable</h3></div></a>
+            </div>
+            <div class="col-md-6">
+                <a class="sin-sub" href=""><div class="jumbotron"><h3>Diseño industrial</h3></div></a>
+            </div>
+        </div>
+        
+    </section>
+    
+</div>
+
+
+<% include ../partials/footer %>

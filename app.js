@@ -7,9 +7,9 @@ var express         = require("express"),
     Video           = require("./models/videos");
     port            = 4000;
 
-//seedBD();
+// seedBD();
 // mongoose.connect("mongodb://localhost/linkTv", {useNewUrlParser: true});
-mongoose.connect("mongodb://jorge:jorge007@ds111963.mlab.com:11963/linktv");
+mongoose.connect("mongodb://jorge:jorge007@ds111963.mlab.com:11963/linktv", {useNewUrlParser: true});
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
@@ -21,7 +21,7 @@ var contactoRoutes      = require("./routes/contactos"),
     videosRoutes        = require("./routes/videos");
 
 // app.use(videosRoutes);
-// app.use(serviciosRoutes);
+app.use(serviciosRoutes);
 // app.use(cursosRoutes);
 // app.use(contactoRoutes);
 
@@ -38,3 +38,5 @@ app.get("/", function(req, res){
 app.listen(process.env.PORT,process.env.IP, function(){
     console.log("Esta vivo!!!")
 })
+
+//process.env.PORT,process.env.IP

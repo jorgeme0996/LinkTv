@@ -1,0 +1,93 @@
+h1 {
+    font-size: 45px;
+    opacity: 0;
+    animation: appear 1s 1s forwards;
+}
+
+h3 {
+    text-align: center;
+}
+
+section.search {
+    display: none;
+    animation: appear 1s 2s forwards;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1100px) {
+    #merca{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .serv-interactivo {
+        display: none;
+    }
+    section.search {
+        display: block;
+    }
+}
+
+.subcategorias{
+    display: none;
+    opacity: 0;
+}
+
+div.jumbotron:hover .subcategorias{
+    display: block;
+    animation: sub 1s 0.3s forwards;
+}
+
+div.jumbotron:hover{
+    background: black;
+    color: gray;
+    transition: 0.5s ease-in-out;
+}
+
+a.a-sub{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+a.a-sub:hover {
+    color: gray;
+}
+
+a.merca {
+    font-size: 16px;
+}
+
+a.sin-sub{
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes sub {
+    25%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        background-color: black;
+    }
+}
+
+@keyframes appear {
+    25%{
+        color: #c84ad9;
+        opacity: 0.2;
+    }
+    50%{
+        color: #c84ad9;
+        opacity: 0.5;
+    }
+    100% {
+        color: black;
+        opacity: 1;
+    }
+}
