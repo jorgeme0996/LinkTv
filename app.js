@@ -8,8 +8,8 @@ var express         = require("express"),
     port            = 4000;
 
  seedBD();
-mongoose.connect("mongodb://localhost/linkTv", {useNewUrlParser: true});
-// mongoose.connect("mongodb://jorge:jorge007@ds111963.mlab.com:11963/linktv", {useNewUrlParser: true});
+// mongoose.connect("mongodb://localhost/linkTv", {useNewUrlParser: true});
+mongoose.connect("mongodb://jorge:jorge007@ds111963.mlab.com:11963/linktv", {useNewUrlParser: true});
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
@@ -35,7 +35,7 @@ app.get("/", function(req, res){
     });  
 });
 
-app.listen(port, function(){
+app.listen(process.env.PORT,process.env.IP, function(){
     console.log("Esta vivo!!!")
 })
 
