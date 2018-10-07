@@ -1,0 +1,21 @@
+<% include ../partials/header %>
+
+<link rel="stylesheet" href="/stylesheets/serv.css">
+
+<div class="container">
+    <% for(let i in servicios){ %>
+        <h1><%= servicios[i].categoria %>: <%= servicios[i].subcategoria %></h1>
+
+        <p class="desc"><%= servicios[i].descripcion %></p>
+
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 precio">
+                <p>Desde: <%= servicios[i].precio %> pesos</p>
+            </div>
+        </div>
+        
+    <% } %>  
+</div>
+
+<% include ../partials/header %>

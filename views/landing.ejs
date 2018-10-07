@@ -8,7 +8,10 @@
         <div class="col-md-9 col-sm-12">
         <% for(let i in videos) { %>
             <div class="jumbotron">
-                <iframe width="500" height="300" src="<%= videos[i].url %>" allowfullscreen></iframe>
+                <h1><%= videos[i].titulo %></h1>
+                <iframe width="560" height="315" src="<%= videos[i].url %>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                
                 <p class="fecha">Publicado el: <%= videos[i].fecha %></p>
             </div>
         <% } %>   

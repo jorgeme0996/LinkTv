@@ -5,6 +5,7 @@ var videoSchema = new mongoose.Schema({
     categoria: String,
     fecha: String,
     url: String,
+    destacado: Number,
     comments: [
         {
             type: mongoose.Schema.Types.ObjectId,

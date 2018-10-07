@@ -2,9 +2,7 @@ var mongoose    = require("mongoose");
 
 var servicioSchema = new mongoose.Schema({
     categoria: String,
-    subcategoria: {
-        titulo: String,
-    },
+    subcategoria: String,
     descripcion: String,
     precio: Number
 })

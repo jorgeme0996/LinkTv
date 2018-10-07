@@ -1,7 +1,7 @@
 h1 {
     font-size: 45px;
     opacity: 0;
-    animation: appear 1s 1s forwards;
+    animation: appear 1.5s 1.5s forwards;
 }
 
 h3 {
@@ -10,8 +10,23 @@ h3 {
 
 section.search {
     display: none;
-    animation: appear 1s 2s forwards;
+    animation: search 1s 1.5s forwards;
     opacity: 0;
+}
+
+@keyframes search {
+    25%{
+        color:black;
+        opacity: 0.2;
+    }
+    50%{
+        color:black;
+        opacity: 0.5;
+    }
+    100% {
+        color: #c84ad9;
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -62,6 +77,38 @@ a.merca {
 a.sin-sub{
     text-decoration: none;
     color: black;
+}
+
+p.desc {
+    font-size: 22px;
+    margin-top: 3%;
+    animation: appear 1.5s 1.5s forwards;
+    opacity: 0;
+}
+
+section.serv-interactivo {
+    animation: appear 1.5s 1.5s forwards;
+    opacity: 0;  
+}
+
+div.precio {
+    text-align: end;
+    font-size: 18px;
+    animation: appear 1.5s 1.5s forwards;
+    opacity: 0;
+}
+
+@media screen and (max-width: 600px){
+    div.precio {
+        font-size: 14px;
+    }
+    p.desc {
+        font-size: 16px;
+        margin-top: 3%;
+    }
+    h1 {
+        font-size: 20px;
+    }
 }
 
 @keyframes sub {
