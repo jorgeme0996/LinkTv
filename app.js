@@ -7,7 +7,7 @@ var express         = require("express"),
     Video           = require("./models/videos");
     port            = 4000;
 
- seedBD();
+ //seedBD();
 // mongoose.connect("mongodb://localhost/linkTv", {useNewUrlParser: true});
 mongoose.connect("mongodb://jorge:jorge007@ds111963.mlab.com:11963/linktv", {useNewUrlParser: true});
 app.use(bodyParser.urlencoded({extended:true}));
